@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>고객의 소리</h1>
+    <form name="input" action="" method="post">
+        아이디: <input type="text" name="id"> <br>
+        구매번호: <input type="number" name="buynum" size="10"><br>
+        패스워드: <input type="password" name="pass"><br>
+        <form name="input" action="getfeedback.jsp" method="get">
+            제품을 평가해 주세요. <br>
+            <textarea name="feedback" id="" cols="50" rows="5"></textarea> <br>
+            <input type="reset" name="reset" value="reset">
+            <input type="submit" name="submit" value="제출">
+            <!-- reset과 서브밋의 차이는 reset은 페이지 세로고침 없이 값이 사라지고, submit은 페이지 전체가 새로 고침 된다. -->
+            
+        </form> 
+    </form>
+    <hr>
+    <h2>선호도 조사입니다.</h2>
+    <form action="">
+        성별:
+        <input type="radio" name="gender" value="male">남성
+        <input type="radio" name="gender" value="female">여성
+        <br>
+        설문1:
+        <input type="radio" name="sall1" value="male">예 
+        <br>
+        설문2:
+        <input type="radio" name="sall2" value="female">예
+        <br>
+        과일 선택:
+        <input type="checkbox" name="fruits" value="apple">사과
+        <input type="checkbox" name="fruits" value="grape">포도
+        <input type="checkbox" name="fruits" value="orange">오렌지
+        <br>
+        <input type="button" value="눌러봐유" onclick="alert('안녕하세요 환영합니다.')">
+
+    </form>
+    <button type="button"><img src="../Day02/radyBug.jpg" width="150" height="100" alt="이미지 로드 실패"></button>
+    <hr>
+    <form action="">
+
+    </form>
+</body>
+
+</html>
